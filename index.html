@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TRUTH Knock | সত্যের সন্ধানে নির্ভীক</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&family=Anek+Bangla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1A3044;
+            --accent-gold: #F2A93B;
+            --dark-bg: #050a12;
+            --white: #ffffff;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        /* কাস্টম স্ক্রলবার */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--dark-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--accent-gold); border-radius: 10px; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Anek Bangla', sans-serif; background: #0a111a; color: #e0e0e0; overflow-x: hidden; }
+
+        header {
+            background: rgba(26, 48, 68, 0.98);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+        .site-name { font-family: 'Cinzel', serif; color: white; font-size: 1.6rem; text-decoration: none; }
+        .site-name span { color: var(--accent-gold); }
+
+        /* ১. হিরো সেকশন (প্যারালাক্স) */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(5, 10, 18, 0.7), rgba(5, 10, 18, 0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 { font-family: 'Cinzel'; font-size: 4.5rem; color: var(--accent-gold); text-shadow: 0 0 20px rgba(242, 169, 59, 0.5); }
+
+        /* ৩. ক্যাটাগরি গ্রিড (নতুন) */
+        .categories { padding: 60px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .cat-card {
+            background: var(--primary-blue);
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 15px;
+            border-bottom: 5px solid var(--accent-gold);
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .cat-card:hover { transform: translateY(-10px); background: #24415c; }
+        .cat-card i { font-size: 2rem; color: var(--accent-gold); display: block; margin-bottom: 15px; }
+
+        /* ৪. ইনভেস্টিগেশন টাইমলাইন/আর্টিকেল */
+        .main-content { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .article-card {
+            background: #111d2b;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            box-shadow: var(--card-shadow);
+        }
+        .article-img { width: 300px; height: 200px; background: #24415c; border-radius: 10px; flex-shrink: 0; }
+        .article-card h2 { color: var(--accent-gold); font-family: 'Cinzel'; margin-bottom: 15px; }
+
+        /* ৫. লাইভ কাউন্টার সেকশন (নতুন) */
+        .live-stats {
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 40px 5%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-weight: bold;
+        }
+        .stat-box span { font-size: 2.5rem; display: block; font-family: 'Cinzel'; }
+
+        /* ফুটার */
+        footer { background: var(--dark-bg); color: #888; padding: 80px 5% 20px; border-top: 5px solid var(--accent-gold); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: #fff; margin-bottom: 20px; font-family: 'Cinzel'; }
+        .footer-col a { color: #888; text-decoration: none; display: block; margin-bottom: 10px; transition: 0.3s; }
+        .footer-col a:hover { color: var(--accent-gold); padding-left: 5px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .article-card { flex-direction: column; }
+            .article-img { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="site-name">THE <span>TRUTH</span> KNOCK</a>
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 20px;">
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                <li><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
+                <li><a href="articles.html" style="color: white; text-decoration: none;">Articles</a></li>
+                <li><a href="investigations.html" style="color: white; text-decoration: none;">Investigations</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div data-aos="zoom-out">
+            <h1>TRUTH IS CALLING</h1>
+            <p style="font-size: 1.5rem; letter-spacing: 5px;">অন্যায়ের আছাড় দিতে আমরা প্রস্তুত</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="cat-card" data-aos="fade-up">
+            <h3>সাইবার সিকিউরিটি</h3>
+            <p>ডিজিটাল দুনিয়ার গোপন চক্রান্ত ফাঁস।</p>
+        </div>
+        <div class="cat-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>রাজনৈতিক ইতিহাস</h3>
+            <p>ইতিহাসের ধামাচাপা দেওয়া সত্য অধ্যায়।</p>
+        </div>
+        <div class="cat-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>অনুসন্ধানী রিপোর্ট</h3>
+            <p>মাঠ পর্যায়ের গভীর ইনভেস্টিগেশন।</p>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <div class="article-card" data-aos="fade-right">
+            <div class="article-img" style="background: url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=400&q=80') center/cover;"></div>
+            <div>
+                <h2>সালাউদ্দীন আহমেদ: অন্তরালের গল্প</h2>
+                <p>কীভাবে রাষ্ট্রীয় গোপনীয়তা বিদেশের কাছে বিক্রি হচ্ছে? দেখুন প্রামাণ্য নথিপত্র। রাজনীতির এই বিষাক্ত চক্র ছিঁড়তে হলে আপনাকে সত্য জানতে হবে।</p>
+                <button onclick="window.location.href='investigation.html'" style="margin-top: 20px; background: var(--accent-gold); border: none; padding: 10px 25px; font-weight: bold; border-radius: 5px; cursor: pointer;">বিস্তারিত রিপোর্ট</button>
+            </div>
+        </div>
+
+        <div class="article-card" data-aos="fade-left">
+            <div class="article-img" style="background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400&q=80') center/cover;"></div>
+            <div>
+                <h2>১২ই ফেব্রুয়ারি: সাইবার বিপ্লব</h2>
+                <p>বিপ্লবের প্রাক্কালে তরুণ প্রজন্মের ভূমিকা কী হওয়া উচিত? সোশ্যাল মিডিয়ার প্রোপাগান্ডা কীভাবে রুখে দেবেন তার গাইডলাইন।</p>
+                <button style="margin-top: 20px; background: var(--accent-gold); border: none; padding: 10px 25px; font-weight: bold; border-radius: 5px; cursor: pointer;">গাইড দেখুন</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="live-stats">
+        <div class="stat-box"><span>৫০+</span> তথ্য ফাঁস</div>
+        <div class="stat-box"><span>১০০কে+</span> পাঠক</div>
+        <div class="stat-box"><span>২৪/৭</span> নজরদারি</div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="color: var(--accent-gold);">THE TRUTH KNOCK</h4>
+                <p>আমরা আছি যেখানে মিডিয়া নীরব। আপনার অধিকার রক্ষায় আমাদের সাইবার সংগ্রাম চলবেই।</p>
+            </div>
+            <div class="footer-col">
+                <h4>কুইক লিংক্স</h4>
+                <a href="#">আজকের রিপোর্ট</a>
+                <a href="#">গোপন ডায়েরি</a>
+                <a href="#">আমাদের মুভমেন্ট</a>
+            </div>
+            <div class="footer-col">
+                <h4>লিগ্যাল</h4>
+                <a href="legal.html">প্রাইভেসি পলিসি</a>
+                <a href="legal.html">কুকিজ তথ্য</a>
+                <a href="legal.html">তথ্য নিরাপত্তা</a>
+            </div>
+            <div class="footer-col">
+                <h4>যোগাযোগ</h4>
+                <p>Email: truth@hamsknock.com</p>
+                <p>Telegram: @TheTruthKnock</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid #222; padding-top: 20px;">
+            &copy; 2026 THE TRUTH Knock | Power by **Hams** & **THE DOEL Network**
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false, mirror: true });
+    </script>
+</body>
+</html>
