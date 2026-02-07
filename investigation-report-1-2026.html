@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Report: বাংলাদেশ ২০২৬ | THE TRUTH Knock</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Anek+Bangla:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0A192F;
+            --accent-gold: #F2A93B;
+            --danger-red: #E74C3C;
+            --text-gray: #CCD6F6;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Anek Bangla', sans-serif; 
+            background-color: var(--primary-blue); 
+            color: var(--text-gray); 
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* প্রফেশনাল নেভিগেশন */
+        header {
+            background: rgba(10, 25, 47, 0.95);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--accent-gold);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-family: 'Cinzel', serif; color: var(--white); font-size: 1.5rem; text-decoration: none; }
+        .logo span { color: var(--accent-gold); }
+
+        /* আর্টিকেল কন্টেইনার */
+        .report-wrapper {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #112240;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border-top: 10px solid var(--danger-red);
+            position: relative;
+        }
+
+        /* ওয়াটারমার্ক */
+        .report-wrapper::before {
+            content: 'CONFIDENTIAL';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            z-index: 0;
+            font-family: 'Cinzel';
+        }
+
+        /* শিরোনাম সেকশন */
+        .report-header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #233554;
+            padding-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .report-header .category {
+            background: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 3px;
+        }
+        .report-header h1 {
+            font-size: 2.8rem;
+            color: var(--white);
+            margin: 20px 0;
+            line-height: 1.3;
+        }
+        .meta-info {
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* বডি টেক্সট */
+        .report-body { position: relative; z-index: 1; }
+        .report-body h2 {
+            color: var(--accent-gold);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            border-left: 5px solid var(--danger-red);
+            padding-left: 15px;
+        }
+        .report-body h3 { color: var(--white); margin: 30px 0 15px; }
+        .report-body p { margin-bottom: 25px; font-size: 1.15rem; text-align: justify; }
+        
+        /* হাইলাইট বক্স */
+        .highlight-box {
+            background: rgba(242, 169, 59, 0.05);
+            border: 1px solid rgba(242, 169, 59, 0.2);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        /* রেফারেন্স সেকশন */
+        .references {
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+        .references h3 { color: var(--accent-gold) !important; margin-bottom: 15px; font-family: 'Cinzel';}
+        .references ul { list-style: none; }
+        .references li { margin-bottom: 10px; color: #8892B0; border-bottom: 1px solid #233554; padding-bottom: 5px; }
+
+        .btn-action {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-action:hover { background: #fff; transform: translateY(-3px); }
+
+        @media (max-width: 768px) {
+            .report-header h1 { font-size: 1.8rem; }
+            .report-wrapper { padding: 20px; margin: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">THE <span>TRUTH</span> KNOCK</a>
+    <nav>
+        <a href="investigations.html" style="color:var(--accent-gold); text-decoration:none; font-weight:bold;">← আর্কাইভ</a>
+    </nav>
+</header>
+
+<article class="report-wrapper" data-aos="fade-up">
+    <div class="report-header">
+        <span class="category">Special Investigative Report</span>
+        <h1>বাংলাদেশ ২০২৬: নির্বাচন নাকি নীল-নকশা? এক গভীর ভূ-রাজনৈতিক ষড়যন্ত্রের ব্যবচ্ছেদ</h1>
+        <div class="meta-info">প্রকাশকাল: ৬ ফেব্রুয়ারি, ২০২৬ | ফাইল আইডি: TTK-EXPOSE-09</div>
+    </div>
+
+    <div class="report-body">
+        <p><strong>ভূমিকা:</strong> বাংলাদেশের রাজনৈতিক ইতিহাসে ১২ ফেব্রুয়ারি ২০২৬ এক সন্ধিক্ষণ হিসেবে চিহ্নিত হতে যাচ্ছে। দীর্ঘ দেড় দশক পর একটি অংশগ্রহণমূলক নির্বাচনের আশা যখন দেশবাসীর মনে উঁকি দিচ্ছে, ঠিক তখনই ‘পর্দার আড়ালের খেলা’ সেই আশাকে বিষাদে রূপ দেওয়ার উপক্রম করেছে। একদিকে প্রতিবেশী দেশের ‘নগ্ন’ হস্তক্ষেপের অভিযোগ, অন্যদিকে দীর্ঘদিনের রাজনৈতিক মিত্রদের মধ্যে ভ্রাতৃঘাতী সংঘাত—সব মিলিয়ে বাংলাদেশ আজ এক বিশাল অগ্নিকুণ্ডের ওপর দাঁড়িয়ে।</p>
+
+        <section data-aos="fade-right">
+            <h2>১. সালাউদ্দীন আহমদ এবং ‘র’ (RAW) কানেকশন: জাতীয়তাবাদের মলাটে ভারতের এজেন্ট?</h2>
+            <p>বিএনপির স্থায়ী কমিটির সদস্য সালাউদ্দীন আহমদকে নিয়ে রাজনৈতিক মহলে এখন ‘ওপেন সিক্রেট’ আলোচনা চলছে। ভারতে দীর্ঘ প্রবাস জীবন (১০ বছর) কাটিয়ে দেশে ফেরার পর তার অতি-তৎপরতা অনেককেই শঙ্কিত করেছে।</p>
+            <div class="highlight-box">
+                <p><strong>অভিযোগ ও বিশ্লেষণ:</strong> গোয়েন্দা সূত্র ও রাজনৈতিক বিশ্লেষকদের দাবি, সালাউদ্দীন আহমদ বর্তমানে ভারতীয় গোয়েন্দা সংস্থা ‘র’-এর প্রেসক্রিপশন অনুযায়ী কাজ করছেন। অভিযোগ রয়েছে, আসন্ন নির্বাচনে বিএনপির মনোনয়ন বোর্ডকে প্রভাবিত করে তিনি জাতীয়তাবাদী ও ভারত-বিরোধী প্রার্থীদের পরিকল্পিতভাবে মাঠ থেকে সরিয়ে দিচ্ছেন। তার জায়গায় এমন ব্যক্তিদের মনোনয়ন দেওয়া হচ্ছে যারা ভারতের প্রতি নমনীয়।</p>
+                <p style="color: var(--accent-gold); font-weight: bold; margin-top: 15px;">প্রশ্ন: তারেক রহমান কি তার দলের ভেতরে এই ‘ট্রোজান হর্স’ সম্পর্কে অবগত? নাকি ভোটের বৈতরণী পার হতে বিএনপি জেনেবুঝেই ভারতের পাতা ফাঁদে পা দিচ্ছে?</p>
+            </div>
+        </section>
+
+        <section data-aos="fade-left">
+            <h2>২. জামায়াত নির্মূলের ‘সন্দ্বীপ মডেল’ ও দেশব্যাপী সহিংসতা</h2>
+            <p>নির্বাচনী ময়দান যখন উৎসবমুখর হওয়ার কথা, তখন জামায়াত ও শিবিরের ওপর পরিকল্পিত হামলা দেশজুড়ে আতঙ্কের সৃষ্টি করেছে।</p>
+            
+            <h3>সন্দ্বীপের রক্তক্ষয়ী হামলা:</h3>
+            <p>চট্টগ্রামের সন্দ্বীপে শিবিরের কর্মীদের ওপর ছাত্রদলের নৃশংস হামলা কেবল বিচ্ছিন্ন কোনো ঘটনা নয়। এটি আসলে জামায়াতকে নির্বাচনী মাঠ থেকে সরিয়ে দেওয়ার একটি মহড়া।</p>
+            
+            <h3>কুমিল্লা ও চরফ্যাশন ট্র্যাজেডি:</h3>
+            <p>কুমিল্লা-১ আসনে জামায়াতের নারী কর্মীদের লাঞ্ছিত করা এবং চরফ্যাশনে বিএনপি-জামায়াত সংঘর্ষে ২৩ জন আহত হওয়া প্রমাণ করে যে, বিএনপি এখন পেশীশক্তির মাধ্যমে ‘একক আধিপত্য’ কায়েম করতে চায়।</p>
+            
+            <div class="highlight-box" style="border-left: 4px solid var(--accent-gold);">
+                <p><strong>গবেষণা:</strong> রাজনৈতিক বিশ্লেষকদের মতে, বিএনপি ভয় পাচ্ছে যে একটি সুষ্ঠু নির্বাচনে জামায়াতের ভোট ব্যাংক তাদের ছাড়িয়ে যেতে পারে। আইআইএলডি (IILD) জরিপ অনুযায়ী, দুই দলের জনপ্রিয়তা এখন প্রায় সমানে সমান (বিএনপি ৩৪.৭%, জামায়াত ৩৩.৬%)। এই শূন্য দশমিক এক শতাংশের লড়াই-ই বিএনপিকে সহিংস করে তুলছে।</p>
+            </div>
+        </section>
+
+        <section data-aos="fade-right">
+            <h2>৩. ‘মুক্তিযুদ্ধ’ কার্ড: কৌশলী ভণ্ডামি নাকি আদর্শিক পরিবর্তন?</h2>
+            <p>হঠাৎ করেই বিএনপি তাদের নির্বাচনী প্রচারণায় ‘মুক্তিযুদ্ধ’ এবং ‘একাত্তরে জামায়াতের ভূমিকা’কে সামনে আনছে।</p>
+            <p><strong>বৈপরীত্য:</strong> যারা গত ২০ বছর জামায়াতকে সাথে নিয়ে আন্দোলন ও সরকার পরিচালনা করেছে, তারা কেন আজ একাত্তরের দোহাই দিচ্ছে?</p>
+            <p><strong>গভীর উদ্দেশ্য:</strong> এটি মূলত পশ্চিমা বিশ্ব এবং ভারতের ‘গুড বুক’-এ নাম লেখানোর একটি কৌশল। জামায়াতকে ‘উগ্র’ এবং ‘রাজাকার’ হিসেবে ব্র্যাকেটবন্দী করে বিএনপি নিজেকে একমাত্র ‘ধর্মনিরপেক্ষ ও গণতান্ত্রিক’ শক্তি হিসেবে জাহির করতে চায়। এটি মূলত আওয়ামী লীগের ফেলে যাওয়া ‘বয়ান’ বা নেরেটিভ দখল করার একটি নগ্ন চেষ্টা।</p>
+        </section>
+
+        <section data-aos="fade-left">
+            <h2>৪. সাইবার সন্ত্রাস ও বঙ্গভবনের সম্পৃক্ততা</h2>
+            <p>নির্বাচনের কারচুপি এখন আর কেবল ব্যালট বক্সে সীমাবদ্ধ নেই, এটি ঢুকে পড়েছে ডিজিটাল প্ল্যাটর্মেও। বঙ্গভবনের সহকারী প্রোগ্রামার মোহাম্মদ ছরওয়ারে আলমের মতো সরকারি কর্মকর্তার হাতে জামায়াত আমিরের সোশ্যাল মিডিয়া অ্যাকাউন্ট হ্যাক হওয়া এক ভয়াবহ অশনি সংকেত।</p>
+            <p><strong>বিশ্লেষণ:</strong> এর অর্থ হলো, প্রশাসনের উচ্চস্তরে এখনো ভারতের এজেন্ডা বাস্তবায়নকারী চক্র সক্রিয় রয়েছে যারা রাষ্ট্রীয় সম্পদ ব্যবহার করে বিরোধী নেতাদের চরিত্রহনন এবং প্রচারণা বাধাগ্রস্ত করছে।</p>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>৫. ভূ-রাজনৈতিক চ্যালেঞ্জ: ভারত কেন নির্বাচন বানচাল করতে চায়?</h2>
+            <p>ভারত ঐতিহাসিকভাবেই বাংলাদেশে একটি ‘অনুগত’ সরকার দেখতে অভ্যস্ত। ৫ আগস্টের বিপ্লবের পর তাদের সেই প্রভাব ক্ষুণ্ণ হয়েছে।</p>
+            <p><strong>ষড়যন্ত্রের ধরন:</strong> ভারত ও তার মিত্ররা চায় বাংলাদেশে এমন একটি অস্থিতিশীল পরিবেশ তৈরি করতে যেন নির্বাচন আন্তর্জাতিক মহলে গ্রহণযোগ্যতা হারায়। সালাউদ্দীন আহমদের মতো নেতাদের মাধ্যমে বিএনপির ভেতর বিভেদ তৈরি করা এবং জামায়াতের সাথে সংঘাত উসকে দেওয়া—সবই এই পরিকল্পনার অংশ।</p>
+        </section>
+
+        <section class="highlight-box" style="background: rgba(231, 76, 60, 0.1); border: 1px solid var(--danger-red);" data-aos="zoom-in">
+            <h2 style="color: var(--danger-red); border: none; padding: 0;">উপসংহার ও কিছু মৌলিক প্রশ্ন:</h2>
+            <p>বাংলাদেশ আজ এমন এক মোড়ে দাঁড়িয়ে যেখানে গণতন্ত্রের মুখোশ পরে চলছে স্বৈরতান্ত্রিক চর্চা। আমাদের কয়েকটি বিষয় গভীরভাবে ভাবতে হবে:</p>
+            <p>১. বিএনপি কি আসলেই ভারতের প্রভাবমুক্ত হতে পেরেছে, নাকি তারা কেবল ‘মালিক’ পরিবর্তন করেছে?<br>
+            ২. সন্দ্বীপে তোমার স্যারের মতো শিক্ষকদের ওপর হামলা কি আগামীর ‘গণতান্ত্রিক’ বাংলাদেশের প্রতিচ্ছবি?<br>
+            ৩. প্রশাসনের রন্ধ্রে রন্ধ্রে থাকা ‘র’-এর এজেন্টদের উপড়ে ফেলার সৎ সাহস বর্তমান অন্তর্বর্তী সরকারের আছে কি?</p>
+        </section>
+
+        <div class="references" data-aos="fade-up">
+            <h3>তথ্যসূত্র (Sources):</h3>
+            <ul>
+                <li>• বিবিসি নিউজ বাংলা, ৫ ফেব্রুয়ারি ২০২৬ (বিএনপির মুক্তিযুদ্ধ কার্ড)।</li>
+                <li>• আল জাজিরা ও ইন্ডিয়া টুডে (বাংলাদেশ নির্বাচন ২০২৬ ও ভারতের প্রভাব)।</li>
+                <li>• ডিবি ও পুলিশ রিপোর্ট (সন্দ্বীপ, কুমিল্লা ও বঙ্গভবনের হ্যাকিং ঘটনা)।</li>
+                <li>• আইআইএলডি (IILD) প্রাক-নির্বাচনী জরিপ ২০২৬।</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="btn-action" onclick="window.print()">রিপোর্ট ডাউনলোড করুন (PDF)</button>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <p style="text-align: center; padding: 40px; color: #444; font-size: 0.8rem;">&copy; 2026 THE TRUTH Knock | সত্যের সন্ধানে নির্ভীক</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>
